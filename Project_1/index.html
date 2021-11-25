@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arvind Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* css Reseet */
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg.jpg');
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        
+        .left {
+            color: white;
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+        
+        .mid {
+            color: white;
+            /* border: 2px solid green; */
+            display: block;
+            width: 50%;
+            margin: 0px auto;
+        }
+        
+        .right {
+            color: white;
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 20px;
+        }
+        
+        .left img {
+            border: 1px solid grey;
+            border-radius: 100px;
+            width: 50px;
+            display: block;
+            margin: auto;
+        }
+        
+        .left p {
+            margin: 0px;
+            font-size: 15px
+        }
+        
+        .navbar ul li {
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+        
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+            padding: 2px;
+            font-size: 25px;
+        }
+        
+        .navbar ul li a:hover,
+        .navbar ul li a:active {
+            text-decoration: underline;
+            color: darkgrey;
+        }
+        
+        .right .btn {
+            background-color: black;
+            color: white;
+            padding: 7px;
+            border-radius: 25px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        
+        h2 {
+            text-align: center
+        }
+        
+        .container {
+            border: 2px solid darkgrey;
+            display: block;
+            width: 30%;
+            margin: 20px;
+            margin-top: 40px;
+            padding: 40px;
+        }
+        
+        .container input {
+            display: block;
+            width: 300px;
+            margin: 5px auto;
+            height: 20px;
+            border-radius: 10px;
+        }
+        
+        input[type='submit'] {
+            background-color: black;
+            border: 1px solid grey;
+            color: white;
+            margin: 10px auto;
+            height: 25px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://media.istockphoto.com/photos/sport-training-weight-dumbles-on-wooden-ground-picture-id1092670800?k=20&m=1092670800&s=612x612&w=0&h=TSG2QbOsuRVHIgPWJQddMLqpVEaGPod71Y8LQjx5DCs=" alt="">
+            <p>Arvind Fitness</p>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">About Us</a></li>
+                    <li>
+                        <a href="#">Services</a></li>
+                    <li>
+                        <a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join Now</h2>
+        <form action="#">
+            <input type="text" placeholder="Enter your name.">
+            <input type="text" placeholder="Enter your age.">
+            <input type="text" placeholder="Enter your gender.">
+            <input type="submit" placeholder="Enter your Phone number.">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
