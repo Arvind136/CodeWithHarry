@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute and n-th child</title>
+    <style>
+        .container {
+            display: block;
+            width: 200px;
+            margin: auto;
+        }
+        
+        input {
+            display: block;
+            margin: 5px;
+        }
+        
+        input[type='text'] {
+            padding: 10px;
+            border: 2px solid red;
+        }
+        
+        a[target] {
+            color: blueviolet;
+        }
+        
+        li:nth-child(odd) {
+            color: rgb(0, 255, 13);
+        }
+        
+        li:nth-child(2n+2) {
+            color: blue;
+        }
+        
+        li:nth-child(even) {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2><a href="https://google.com" target="_blank">Go to GOOGLE</a></h2>
+        <form action="">
+            <input type="text" placeholder="your name">
+            <input type="number" placeholder="your age">
+            <input type="submit" placeholder="your age">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">ITEM2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
