@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .card {
+            /* border: 2px solid red; */
+            margin: 5px;
+            padding: 10px;
+            background-color: bisque;
+            box-shadow: -5px 10px blue;
+            box-shadow: -5px 10px 10px blue;
+            box-shadow: -5px 10px 0px 0px blue, -10px 15px 0px 0px red;
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: -5px 10px 10px 2px rgba(61, 182, 212, 0.726); */
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .card h2 {
+            text-shadow: 2px 2px 1px rgb(250, 250, 250);
+            /* text-shadow: offset-x offset-y blur-radius color; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>card 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed iste, vero animi molestiae ea deleniti beatae rem maiores, facere veniam ullam nobis ut, possimus adipisci quibusdam laborum libero nulla accusantium quas aliquid voluptate praesentium?</p>
+        </div>
+        <div class="card">
+            <h2>card 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed iste, vero animi molestiae ea deleniti beatae rem maiores, facere veniam ullam nobis ut, possimus adipisci quibusdam laborum libero nulla accusantium quas aliquid voluptate praesentium?</p>
+        </div>
+        <div class="card">
+            <h2>card 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed iste, vero animi molestiae ea deleniti beatae rem maiores, facere veniam ullam nobis ut, possimus adipisci quibusdam laborum libero nulla accusantium quas aliquid voluptate praesentium?</p>
+        </div>
+    </div>
+</body>
+
+</html>
