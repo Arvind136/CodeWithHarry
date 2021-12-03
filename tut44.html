@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS GRID</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-areas: 'navbar navbar navbar navbar' 'section section section aside' 'footer footer footer footer ';
+        }
+        
+        #navbar {
+            grid-area: navbar;
+        }
+        
+        #section {
+            grid-area: section;
+        }
+        
+        #aside {
+            grid-area: aside;
+        }
+        
+        .item {
+            background-color: yellow;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugiat eaque, minus culpa laboriosam ex illo voluptate recusandae cumque nobis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam veritatis rerum accusamus commodi
+            maxime iure, quae officiis laudantium molestiae impedit deleniti ipsa earum iste libero minima repudiandae perspiciatis, minus id enim culpa? Quos eius rem nemo, laudantium exercitationem, dicta voluptatum autem illo odio nulla veritatis magni
+            minima vero natus esse nisi! Fugit harum esse molestias non vel deserunt nemo dolor, dolorum quam minus dolores commodi corrupti sunt ducimus architecto recusandae atque laboriosam numquam alias, saepe doloremque! Animi sed ut minima ratione
+            et omnis, porro sint ipsam voluptatibus illo quae quisquam commodi culpa aut, quis excepturi! Hic non repellendus quis repellat? </div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt qui aliquid adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium laudantium officia perspiciatis explicabo numquam quis quaerat a dicta corrupti asperiores
+            facilis cum incidunt sed quam possimus commodi voluptate dolorem odit in repellendus perferendis, dignissimos quod. Eum consequuntur tempore vel eveniet illo repellat voluptate molestiae neque cumque dolor cum qui sed excepturi, suscipit optio
+            possimus quia? Rem laudantium sapiente magni officiis enim, sit corrupti culpa tempore amet quos velit aut temporibus voluptatem, cumque pariatur doloremque, iure itaque consequuntur quo fugiat libero quibusdam iste. Dignissimos quibusdam
+            aut, eveniet porro esse delectus, distinctio pariatur cum doloribus exercitationem maxime ipsam vitae quas veniam! </div>
+    </div>
+    <footer class="item">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, impedit.
+    </footer>
+
+</body>
+
+</html>
