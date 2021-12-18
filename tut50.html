@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Strinng Function</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var str = "This is a string";
+    console.log(str);
+    // first occurence
+    var position = str.indexOf('is');
+    console.log(position);
+    // last occurence
+    position = str.lastIndexOf('is');
+    console.log(position);
+
+    // var substr = str.slice(0, 7);
+    var substr = str.substring(0, 7);
+    console.log(substr);
+    substr1 = str.substr(0, 4);
+    console.log(substr1);
+
+    var replaced = str.replace('string', 'Arvind');
+    console.log(str);
+    console.log(replaced);
+
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    var newstring = str.concat(' New String');
+    console.log(newstring);
+
+    var strWithWhiteSpaces = "     White     Space       ";
+    console.log(strWithWhiteSpaces);
+    console.log(strWithWhiteSpaces.trim());
+
+    var char = str.charAt(5);
+    console.log(char);
+    char5 = str.charCodeAt(5);
+    console.log(char5);
+
+
+    console.log(str[6]);
+</script>
+
+</html>
