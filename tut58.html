@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS setTimeout and clearTimeout</title>
+</head>
+
+<body>
+    <div class="container">
+        <H1 id="heading"></H1>
+        <span id="time"></span>
+    </div>
+
+</body>
+<script>
+    let heading = document.getElementById('heading');
+    let Time = document.getElementById('time');
+    // let h1 = "This is Our Current Time, Welcome";
+    // heading.innerHTML = h1;
+
+    function Greet() {
+        let h1 = "This is Our Current Time, Welcome";
+        heading.innerHTML = h1;
+    }
+    setTimeout(Greet, 2000);
+
+    function dateTime() {
+        let time = new Date();
+        // console.log(time);
+        Time.innerHTML = time;
+
+    }
+    let stop = setInterval(dateTime, 1000);
+    // clearInterval(stop);
+</script>
+
+</html>
