@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Events</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quaerat doloribus quia perferendis eveniet numquam ducimus voluptatum consequuntur voluptate voluptatibus ratione, enim soluta beatae voluptates. Architecto rem distinctio earum aperiam.</p>
+        <button class="btn" onclick="hideShow()">Hide/Show</button>
+    </div>
+
+</body>
+<script>
+    let para = document.getElementById('para');
+    para.addEventListener('mouseover', function run() {
+        alert("This is a mouseover feature.")
+    })
+    para.addEventListener('mouseout', function run() {
+        alert("This is a mouseout feature.")
+    })
+
+    function hideShow() {
+        if (para.style.display != 'none') {
+            para.style.display = 'none';
+        } else {
+            para.style.display = 'block';
+        }
+    }
+</script>
+
+</html>
