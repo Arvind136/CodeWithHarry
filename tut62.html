@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON tuttorial</title>
+</head>
+
+<body>
+    <div class="container">
+        This JSON tutorial.
+    </div>
+</body>
+
+<script>
+    let company = {
+        name: "Tesla",
+        owner: "Elon Musk",
+        age: "Don't Know",
+    }
+    console.log(company);
+    let companyInList = JSON.stringify(company);
+    console.log(companyInList);
+    let companyParse = JSON.parse(companyInList);
+    console.log(companyParse);
+</script>
+
+</html>
